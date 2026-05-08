@@ -1,0 +1,93 @@
+# =========================
+# Python / Notebook
+# =========================
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# =========================
+# Environment
+# =========================
+.env
+.venv/
+venv/
+env/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Large LiDAR Dataset Files
+# =========================
+*.lvx
+*.las
+*.pcd
+*.ply
+*.bag
+*.db3
+
+# Raw / processed CSV datasets
+*.csv
+*.Csv
+
+# =========================
+# Dataset Folders
+# =========================
+A.Raw Dataset/
+A.Raw_Testing/
+Clean Dataset/
+Framed Dataset/
+Preprocessing/
+Preprocessed_GC25_Z008/
+Reconvert_Test/
+Reconvert_Work/
+audit_similarity dataset/
+
+# =========================
+# Model Outputs
+# =========================
+*.pt
+*.pth
+*.h5
+*.keras
+*.onnx
+*.engine
+*.pkl
+*.joblib
+
+# =========================
+# Logs / Results
+# =========================
+logs/
+runs/
+outputs/
+results/
+checkpoints/
+wandb/
+
+
+# Dataset / generated outputs
+C.Framed Dataset/
+Z.Proses Khusus DATA KORUP/
+
+# Large data files
+*.csv
+*.Csv
+*.lvx
+*.LVX
+*.npy
+*.npz
+*.pkl
+*.joblib
+
+# Model files
+*.pt
+*.pth
+*.h5
+*.keras
+*.onnx
