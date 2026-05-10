@@ -1,0 +1,63 @@
+{
+    "recommended_by": "auto_score_ranking",
+    "review_required": true,
+    "eps": 0.2,
+    "min_samples": 10,
+    "min_cluster_points": 20,
+    "features": [
+        "X_corr",
+        "Y_corr",
+        "Z_level"
+    ],
+    "calibration_input": "/media/spell/Spell-lab/Lidar/D.Preprocessing/Preprocessed_GC25_Z008/GC25_Z080",
+    "calibration_output": "/media/spell/Spell-lab/Lidar/D.Preprocessing/DBSCAN_Calibration_GC25_Z080",
+    "parameter_grid": {
+        "eps_list": [
+            0.08,
+            0.1,
+            0.12,
+            0.15,
+            0.18,
+            0.2
+        ],
+        "min_samples_list": [
+            10,
+            15,
+            20,
+            25
+        ]
+    },
+    "cleaning": {
+        "remove_non_finite": true,
+        "remove_all_zero_coords": true,
+        "degenerate_eps": 1e-06,
+        "finite_check_columns": [
+            "X_corr",
+            "Y_corr",
+            "Z_corr",
+            "Z_level"
+        ],
+        "corrected_zero_check_columns": [
+            "X_corr",
+            "Y_corr",
+            "Z_corr"
+        ],
+        "raw_zero_check_columns": [
+            "X",
+            "Y",
+            "Z"
+        ]
+    },
+    "selection_metrics": {
+        "auto_score": 0.821107490468852,
+        "success_ratio": 1.0,
+        "noise_ratio_mean": 0.012825842815224505,
+        "cluster_count_valid_mean": 1.272360727027084,
+        "no_valid_cluster_ratio": 0.0,
+        "main_cluster_ratio_total_mean": 0.9377472869688204,
+        "main_cluster_points_mean": 433.81986869603764,
+        "main_cluster_x_range_mean": 0.5829950210677419,
+        "main_cluster_y_range_mean": 0.5512048299592578,
+        "main_cluster_z_range_mean": 0.9773253403559141
+    }
+}

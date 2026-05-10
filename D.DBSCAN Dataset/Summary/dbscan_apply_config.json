@@ -1,0 +1,43 @@
+{
+    "created_at": "2026-05-10 13:29:13",
+    "input_dir": "/media/spell/Spell-lab/Lidar/D.Preprocessing/Preprocessed_GC25_Z008/GC25_Z080",
+    "output_root": "/media/spell/Spell-lab/Lidar/D.DBSCAN Dataset",
+    "dbscan_eps": 0.2,
+    "dbscan_min_samples": 10,
+    "min_cluster_points": 20,
+    "dbscan_features": [
+        "X_corr",
+        "Y_corr",
+        "Z_level"
+    ],
+    "finite_check_columns": [
+        "X_corr",
+        "Y_corr",
+        "Z_corr",
+        "Z_level"
+    ],
+    "corr_zero_check_columns": [
+        "X_corr",
+        "Y_corr",
+        "Z_corr"
+    ],
+    "raw_zero_check_columns": [
+        "X",
+        "Y",
+        "Z"
+    ],
+    "degenerate_eps": 1e-06,
+    "output_columns": [
+        "frame_id",
+        "Timestamp",
+        "X",
+        "Y",
+        "Z",
+        "X_corr",
+        "Y_corr",
+        "Z_corr",
+        "Z_level",
+        "Reflectivity"
+    ],
+    "overwrite_output": true
+}

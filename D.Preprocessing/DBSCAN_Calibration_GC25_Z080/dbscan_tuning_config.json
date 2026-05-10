@@ -1,0 +1,95 @@
+{
+    "input_dir": "/media/spell/Spell-lab/Lidar/D.Preprocessing/Preprocessed_GC25_Z008/GC25_Z080",
+    "output_dir": "/media/spell/Spell-lab/Lidar/D.Preprocessing/DBSCAN_Calibration_GC25_Z080",
+    "dbscan_features": [
+        "X_corr",
+        "Y_corr",
+        "Z_level"
+    ],
+    "eps_list": [
+        0.08,
+        0.1,
+        0.12,
+        0.15,
+        0.18,
+        0.2
+    ],
+    "min_samples_list": [
+        10,
+        15,
+        20,
+        25
+    ],
+    "min_cluster_points": 20,
+    "cleaning": {
+        "remove_non_finite": true,
+        "remove_all_zero_coords": true,
+        "degenerate_eps": 1e-06,
+        "finite_check_columns": [
+            "X_corr",
+            "Y_corr",
+            "Z_corr",
+            "Z_level"
+        ],
+        "corrected_zero_check_columns": [
+            "X_corr",
+            "Y_corr",
+            "Z_corr"
+        ],
+        "raw_zero_check_columns": [
+            "X",
+            "Y",
+            "Z"
+        ]
+    },
+    "roi_axis_for_visualization": {
+        "x_min": 0.0,
+        "x_max": 3.0,
+        "y_min": -1.5,
+        "y_max": 1.5,
+        "z_min": 0.0,
+        "z_max": 2.0
+    },
+    "activities": [
+        "Bungkuk",
+        "Duduk",
+        "Jongkok",
+        "Jatuh"
+    ],
+    "dev_subjects": [
+        "Adelia",
+        "Afi",
+        "Aswangga",
+        "Bustan",
+        "Dilia",
+        "Eldivo",
+        "Fathir",
+        "Lina",
+        "Manda",
+        "Miftah",
+        "Teguh",
+        "Tsamara"
+    ],
+    "test_rooms": [
+        "Controlled Room",
+        "Uncontrolled Room"
+    ],
+    "test_subjects": [
+        "Kanaya",
+        "Naila",
+        "Nana",
+        "Rega",
+        "Zaira"
+    ],
+    "file_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ]
+}
