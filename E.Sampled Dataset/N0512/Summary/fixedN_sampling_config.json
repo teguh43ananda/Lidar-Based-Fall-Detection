@@ -1,0 +1,44 @@
+{
+    "created_at": "2026-05-10 16:20:46",
+    "input_root": "/media/spell/Spell-lab/Lidar/D.DBSCAN Dataset",
+    "sampled_out_root": "/media/spell/Spell-lab/Lidar/E.Sampled Dataset",
+    "sampled_run_root": "/media/spell/Spell-lab/Lidar/E.Sampled Dataset/N0512",
+    "n_target": 512,
+    "n_folder_name": "N0512",
+    "sampling_strategy": {
+        "M_greater_than_N": "centroid_initialized_farthest_point_sampling",
+        "M_less_than_N": "retain_all_original_points_plus_uniform_bootstrap_duplicates",
+        "M_equal_N": "unchanged"
+    },
+    "sampling_coord_columns": [
+        "X_corr",
+        "Y_corr",
+        "Z_level"
+    ],
+    "required_columns": [
+        "frame_id",
+        "Timestamp",
+        "X",
+        "Y",
+        "Z",
+        "X_corr",
+        "Y_corr",
+        "Z_corr",
+        "Z_level",
+        "Reflectivity"
+    ],
+    "output_columns": [
+        "frame_id",
+        "Timestamp",
+        "X",
+        "Y",
+        "Z",
+        "X_corr",
+        "Y_corr",
+        "Z_corr",
+        "Z_level",
+        "Reflectivity"
+    ],
+    "overwrite_output": true,
+    "float_format": "%.6f"
+}
