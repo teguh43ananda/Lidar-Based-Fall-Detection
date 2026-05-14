@@ -1,0 +1,20 @@
+{
+    "final_train_subjects": [
+        "Aswangga",
+        "Bustan",
+        "Dilia",
+        "Eldivo",
+        "Fathir",
+        "Lina",
+        "Manda",
+        "Miftah",
+        "Teguh",
+        "Tsamara"
+    ],
+    "final_val_subjects": [
+        "Adelia",
+        "Afi"
+    ],
+    "n_final_train_windows": 7781,
+    "n_final_val_windows": 1472
+}

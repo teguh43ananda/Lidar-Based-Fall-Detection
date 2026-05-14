@@ -1,0 +1,20 @@
+{
+    "run_hpo": false,
+    "reason": "HPO skipped because best config was recovered from previous HPO log.",
+    "recovered_best_config_path": "/media/spell/Spell-lab/Lidar/F.Training Results/best_hpo_config_recovered.json",
+    "best_config_path": "/media/spell/Spell-lab/Lidar/F.Training Results/DGCNN_GRU_N0512_T020_S002/configs/best_hpo_config.json",
+    "best_hpo_config": {
+        "knn_k": 20,
+        "learning_rate": 0.0005,
+        "l2_weight": 1e-05,
+        "dropout_temporal": 0.2,
+        "dropout_classifier": 0.3,
+        "source": "recovered_from_hpo_log",
+        "best_observed_trial": 1,
+        "best_observed_fold": 1,
+        "best_epoch": 5,
+        "validation_accuracy": 0.9808,
+        "validation_loss": 0.1044
+    },
+    "timestamp": "2026-05-13 10:48:54"
+}

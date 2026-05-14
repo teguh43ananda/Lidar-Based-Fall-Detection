@@ -1,0 +1,10 @@
+{
+    "accuracy": 0.9697371913989913,
+    "precision_binary": 0.96875,
+    "recall_binary": 0.9171597633136095,
+    "f1_binary": 0.9422492401215805,
+    "macro_f1": 0.9608728214996392,
+    "balanced_accuracy": 0.9531312801311963,
+    "fall_precision": 0.96875,
+    "fall_recall": 0.9171597633136095
+}

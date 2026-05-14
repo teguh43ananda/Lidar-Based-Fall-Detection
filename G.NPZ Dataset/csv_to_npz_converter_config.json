@@ -1,0 +1,38 @@
+{
+    "created_at": "2026-05-11 19:36:08",
+    "sampled_root": "/media/spell/Spell-lab/Lidar/E.Sampled Dataset",
+    "npz_out_root": "/media/spell/Spell-lab/Lidar/G.NPZ Dataset",
+    "n_folders": [
+        "N0256",
+        "N0369",
+        "N0384",
+        "N0512",
+        "N1024"
+    ],
+    "frame_id_column": "frame_id",
+    "npz_columns": [
+        "Timestamp",
+        "X",
+        "Y",
+        "Z",
+        "X_corr",
+        "Y_corr",
+        "Z_corr",
+        "Z_level",
+        "Reflectivity"
+    ],
+    "required_columns": [
+        "frame_id",
+        "Timestamp",
+        "X",
+        "Y",
+        "Z",
+        "X_corr",
+        "Y_corr",
+        "Z_corr",
+        "Z_level",
+        "Reflectivity"
+    ],
+    "overwrite_npz": true,
+    "float_dtype": "<class 'numpy.float32'>"
+}

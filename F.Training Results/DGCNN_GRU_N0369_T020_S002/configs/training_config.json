@@ -1,0 +1,72 @@
+{
+    "created_at": "2026-05-11 20:38:01",
+    "seed": 42,
+    "npz_root": "/media/spell/Spell-lab/Lidar/G.NPZ Dataset/N0369",
+    "training_out_root": "/media/spell/Spell-lab/Lidar/F.Training Results",
+    "trial_name": "DGCNN_GRU_N0369_T020_S002",
+    "trial_root": "/media/spell/Spell-lab/Lidar/F.Training Results/DGCNN_GRU_N0369_T020_S002",
+    "recovered_best_config_path": "/media/spell/Spell-lab/Lidar/F.Training Results/best_hpo_config_recovered.json",
+    "n_target": 369,
+    "window_size": 20,
+    "stride": 2,
+    "feature_columns": [
+        "X_corr",
+        "Y_corr",
+        "Z_level"
+    ],
+    "npz_columns": [
+        "Timestamp",
+        "X",
+        "Y",
+        "Z",
+        "X_corr",
+        "Y_corr",
+        "Z_corr",
+        "Z_level",
+        "Reflectivity"
+    ],
+    "label_map": {
+        "Bungkuk": 0,
+        "Duduk": 0,
+        "Jongkok": 0,
+        "Jatuh": 1
+    },
+    "class_names": [
+        "Non-Fall",
+        "Fall"
+    ],
+    "batch_size": 4,
+    "cv_splits": 4,
+    "random_search_trials": 0,
+    "max_epochs_hpo": 0,
+    "early_stop_patience_hpo": 0,
+    "max_epochs_final": 100,
+    "early_stop_patience_final": 15,
+    "hpo_space": {
+        "knn_k": [
+            10,
+            15,
+            20
+        ],
+        "learning_rate": [
+            0.0005,
+            0.0001,
+            5e-05
+        ],
+        "l2_weight": [
+            1e-05,
+            0.0001
+        ],
+        "dropout_temporal": [
+            0.2,
+            0.3
+        ],
+        "dropout_classifier": [
+            0.3,
+            0.4
+        ]
+    },
+    "run_hpo": false,
+    "use_recovered_best_config": true,
+    "test_room_for_model_eval": "Controlled Room"
+}
